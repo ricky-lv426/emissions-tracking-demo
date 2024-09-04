@@ -39,3 +39,5 @@ Below are a couple of result plots. First for the demo code as is:
 Second for the same demo code, but turning off output to stdout and compiling the C/C++ and Fortran code with compiler optimisation flags enabled. 
 
 ![alt text](plots/emissions_no_print_optimised.png)
+
+The data for the above plots were generated on Apple M1 MacBook Pro with 8GB of RAM, using the Gfortran version 14.1.0 and Apple clang version 15.0.0.
