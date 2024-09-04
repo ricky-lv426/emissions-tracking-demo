@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
         }
         nqueens.number_of_solutions = 0;
         place_queen(&nqueens, positions, 1);
-        printf("Found %d solutions\n", nqueens.number_of_solutions);
+        // printf("Found %d solutions\n", nqueens.number_of_solutions);
     }
     free(positions);
     return 0;
@@ -71,7 +71,7 @@ bool not_under_attack(int *positions, int occupied_rows, int column) {
 
 void place_queen(nqueen_puzzle *nqueens, int *positions, int target_row) {
     if (target_row > nqueens->size) {
-        print_board(*nqueens, positions);
+        // print_board(*nqueens, positions);
         nqueens->number_of_solutions++;
     } else {
         for (int column = 1; column <= nqueens->size; column++) {

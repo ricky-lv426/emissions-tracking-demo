@@ -30,4 +30,12 @@ To re-activate the environment just run:
 . .venv/bin/activate
 ```
 
-See demo notebook `demo.ipynb` for running the example code with carbon emissions tracking. 
+See demo notebook `demo.ipynb` for running the example code with carbon emissions tracking.
+
+Below are a couple of result plots. First for the demo code as is:
+
+![alt text](./plots/emissions.png)
+
+Second for the same demo code, but turning off output to stdout and compiling the C/C++ and Fortran code with compiler optimisation flags enabled. 
+
+![alt text](./plots/emissions_no_print_optimised.png)
