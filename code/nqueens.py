@@ -32,7 +32,7 @@ def not_under_attack(positions, occupied_rows, column):
 
 def place_queen(nqueens, positions, target_row):
     if target_row == nqueens.size:
-        # print_board(nqueens, positions)
+        print_board(nqueens, positions)
         nqueens.number_of_solutions += 1
     else:
         for column in range(nqueens.size):
@@ -55,7 +55,7 @@ def main():
         positions = [-1] * nqueens.size
         nqueens.number_of_solutions = 0
         place_queen(nqueens, positions, 0)
-        # print("Found", nqueens.number_of_solutions, "solutions")
+        print("Found", nqueens.number_of_solutions, "solutions")
 
 
 if __name__ == "__main__":

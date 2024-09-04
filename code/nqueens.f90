@@ -34,7 +34,7 @@ program main
         positions = 0
         nqueens%number_of_solutions = 0
         call place_queen(nqueens, positions, 1)
-        ! print *, "Found ", nqueens%number_of_solutions, " solutions"
+        print *, "Found ", nqueens%number_of_solutions, " solutions"
     end do
     deallocate(positions)
 
@@ -79,7 +79,7 @@ program main
         integer :: column
 
         if (target_row > nqueens%size) then
-            ! call print_board(nqueens, positions)
+            call print_board(nqueens, positions)
             nqueens%number_of_solutions = nqueens%number_of_solutions + 1
         else
             do column = 1, nqueens%size
